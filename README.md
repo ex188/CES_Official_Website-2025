@@ -29,7 +29,6 @@ Photo Resource: https://photos.app.goo.gl/PNphkr12abVZuNpP8
 | Update Gallery pictures  | Updating the gallery section with most recent pictures       |  |
 | Update HomePage| Update the newest events on the homepage, contents of intro and links| |
 | Update contact| update newest contact info at the page||
-| Task Maybe?                    | Description                                                  | Completed                         |
 | Set up Google Analytics??  | Setting up google analytics to track visitor traffic         |  |
 | Member + Alumni Login??    | Creating a new section prompting alumni and members of CES to login. Logged in users should be able to access hidden contents of the website. |  |
 
