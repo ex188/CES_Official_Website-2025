@@ -44,8 +44,8 @@ function renderGallery() {
     'IMG_28.jpg',
     'IMG_29.jpg',
     'IMG_30.jpg',
-	'cat_1.jpg',
-	'dog_1.jpg',
+	  'cat_1.jpg',
+	  'dog_1.jpg',
 	'image_100.jpg'
   ];
 
