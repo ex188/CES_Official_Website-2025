@@ -24,11 +24,11 @@ Photo Resource: https://photos.app.goo.gl/PNphkr12abVZuNpP8
 
 | Task                     | Description                                                  | Completed                         |
 | ------------------------ | ------------------------------------------------------------ | --------------------------------- |
-| Update Members           | Adding names and roles for the newest members 2024-2025      | ![](https://progress-bar.dev/25/) |
-| Update Business Partners | Adding logos and short descriptions + links in the contact section about CES's business collaborators | ![](https://progress-bar.dev/0/)  |
-| Member + Alumni Login    | Creating a new section prompting alumni and members of CES to login. Logged in users should be able to access hidden contents of the website. | ![](https://progress-bar.dev/0/)  |
-| Update Gallery pictures  | Updating the gallery section with most recent pictures       | ![](https://progress-bar.dev/0/)  |
-| Set up Google Analytics  | Setting up google analytics to track visitor traffic         | ![](https://progress-bar.dev/0/)  |
+| Update Members           | Adding names and roles for the newest members 2024-2025      |  |
+| Update Business Partners | Adding logos and short descriptions + links in the contact section about CES's business collaborators |  |
+| Member + Alumni Login    | Creating a new section prompting alumni and members of CES to login. Logged in users should be able to access hidden contents of the website. |  |
+| Update Gallery pictures  | Updating the gallery section with most recent pictures       |  |
+| Set up Google Analytics  | Setting up google analytics to track visitor traffic         |  |
 
 ## Getting Started
 
