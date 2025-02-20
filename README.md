@@ -51,15 +51,15 @@ Installation:
 
 | Contributor   | Email         | Role         |
 | ------------- | ------------- |------------- |
-| Wanjun Gu     | wagu@health.ucsd.edu | Developer |
-| Yueqian Ma    | yum001@ucsd.edu     | Developer                          |
-| Yueqing Qiao  | y2qiao@ucsd.edu     | Designer                           |
-| Xuezheng Wang | xuw005@ucsd.edu     | Photographer                       |
+| Anthony Chu     | abc004@ucsd.edu | Developer |
+|  |     | Developer                          |
+|  |     | Designer                           |
+|  |     | Photographer                       |
 
 **All right reserved by Chinese Engineering Society at UCSD.**
 
 ## Acknowledgments
 
-UCSD Chinese Engineering Society Crew 2020 - 2021
+UCSD Chinese Engineering Society Crew 2024-2025
 <br>
 Colorlib - Informational and well-designed templates
