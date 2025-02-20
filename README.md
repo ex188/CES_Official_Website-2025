@@ -26,10 +26,12 @@ Photo Resource: https://photos.app.goo.gl/PNphkr12abVZuNpP8
 | ------------------------ | ------------------------------------------------------------ | --------------------------------- |
 | Update Members           | Adding names and roles for the newest members 2024-2025      |  |
 | Update Business Partners | Adding logos and short descriptions + links in the contact section about CES's business collaborators |  |
-| Member + Alumni Login??    | Creating a new section prompting alumni and members of CES to login. Logged in users should be able to access hidden contents of the website. |  |
 | Update Gallery pictures  | Updating the gallery section with most recent pictures       |  |
-| Set up Google Analytics??  | Setting up google analytics to track visitor traffic         |  |
 | Update HomePage| Update the newest events on the homepage, contents of intro and links| |
+| Update contact| update newest contact info at the page||
+| Task that's maybe?                     | Description                                                  | Completed                         |
+| Set up Google Analytics??  | Setting up google analytics to track visitor traffic         |  |
+| Member + Alumni Login??    | Creating a new section prompting alumni and members of CES to login. Logged in users should be able to access hidden contents of the website. |  |
 
 ## Getting Started
 
