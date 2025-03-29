@@ -46,7 +46,8 @@ function renderGallery() {
     'IMG_30.jpg',
 	  'cat_1.jpg',
 	  'dog_1.jpg',
-	'image_100.jpg'
+	  'image_100.jpg',
+    'CDP.jpg'
   ];
 
   var node = document.getElementById('gallery-content');
