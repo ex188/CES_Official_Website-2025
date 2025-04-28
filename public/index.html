@@ -110,15 +110,22 @@
 
 
 
-  <div class="featured-donate overlay-color" style="background-image: url('images/ces_bg.jpg');">
+  <div class="featured-donate overlay-color" style="background-image: url('images/2024-2025photo/GroupPhoto/Bonefire2024Fall.JPG');">
     
     <div class="container">
       <div class="row">
         <div class="col-lg-8 order-lg-2 mb-3 mb-lg-0">
-          <img src="images/family2020.jpg" alt="Image placeholder" class="img-fluid">
+          <div class="fade-gallery">
+            <img src="images/2024-2025photo/Gallery/Departments/LB/LB2024-2025.JPG" class="active" alt="Leadership Board">
+            <img src="images/2024-2025photo/Gallery/Departments/CDP/CDP2024-2025.jpg" alt="CDP Department">
+            <img src="images/2024-2025photo/Gallery/Departments/Media/Media2024-2025.jpg" alt="Media Department">
+            <img src="images/2024-2025photo/Gallery/Departments/HR/HR2024-2025.jpg" alt="HR Department">
+            <img src="images/2024-2025photo/Gallery/Departments/DAD/DAD2024-2025.jpg" alt="DAD Department">
+            <img src="images/2024-2025photo/Gallery/Departments/BD/BD2024-2025.jpg" alt="BD Department">
+          </div>
         </div>
         <div class="col-lg-4 pr-lg-5">
-          <span class="featured-text mb-3 d-block">CES 2025</span>
+          <span class="fered-text mb-3 d-block">CES 2025</span>
           <h2>2025 CES Crews | 2025 CES 团队介绍</h2>
           <p class="mb-3">Concurrently, CES is consisted of not only UCSD juniors, sophomores and freshmans who excel in their studies, but also senior graduates who are already admitted by prestigous schools such as Columbia University, UC Berkeley and so on. </p>
           <p class="mb-3">CES团队不仅由加州大学圣地亚哥分校那些学业出众的本科和硕士学生组成，同时也汇聚了已被哥伦比亚大学、加州大学伯克利分校等知名院校录取的优秀毕业生校友，分布在美国前三十的顶级研究型大学里。</p>
@@ -129,11 +136,52 @@
           
           <p><a href="contact.html" target="_blank" class="btn btn-primary btn-hover-white py-3 px-5">Connect with CES today</a></p>
         </div>
-        
       </div>
     </div>
+  </div>
 
-  </div> <!-- .featured-donate -->
+  <style>
+    .fade-gallery {
+      position: relative;
+      width: 100%;
+      height: 588px;
+      background-image: url('images/2024-2025photo/GroupPhoto/Bonefire2024Fall.JPG');
+      background-size: cover;
+      background-position: center;
+    }
+    .fade-gallery img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      z-index: 1;
+    }
+    .fade-gallery img.active {
+      opacity: 1;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('.fade-gallery img');
+      let currentIndex = 0;
+
+      // 确保第一张图片显示
+      images[0].classList.add('active');
+
+      function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+      }
+
+      setInterval(showNextImage, 3000);
+    });
+  </script>
 
   <div class="site-section fund-raisers">
     <div class="container">
@@ -220,13 +268,13 @@
 
  
 
-  <div class="featured-section overlay-color-2" style="background-image: url('images/bg_3.jpg');">
+  <div class="featured-section overlay-color-2" style="background-image: url('images/2024-2025photo/Gallery/Departments/LB/LB2024-2025.JPG');">
     
     <div class="container">
       <div class="row">
 
         <div class="col-md-6">
-          <img src="images/bg_3.jpg" alt="Image placeholder" class="img-fluid">
+          <img src="images/2024-2025photo/Gallery/Departments/LB/LB2024-2025.JPG" alt="Image placeholder" class="img-fluid">
         </div>
 
         <div class="col-md-6 pl-md-5">
