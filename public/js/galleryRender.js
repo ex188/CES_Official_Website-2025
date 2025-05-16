@@ -15,17 +15,17 @@ function renderGallery() {
   // 'img_6.jpg',
   //  path names will be appended automatically
   //  images will appear in this order
-  var strs = ["Bonefire2024Fall.JPG", "毕业酒会2024.JPG"];
+  var strs = ["Bonefire2024Fall.JPG", "毕业酒会2024.JPG","LB2024-2025.JPG"];
 
   var node = document.getElementById("gallery-content");
   for (var imgPath of strs) {
     var cp = template.replace(
       "{{{img}}}",
-      "public/images/2024-2025photo/GroupPhoto/" + imgPath
+      "images/2024-2025photo/GroupPhoto/" + imgPath
     );
     cp = cp.replace(
       "{{{img}}}",
-      "public/images/2024-2025photo/GroupPhoto/" + imgPath
+      "images/2024-2025photo/GroupPhoto/" + imgPath
     );
     var temp = document.createElement("div");
     temp.className = "col-md-4";
