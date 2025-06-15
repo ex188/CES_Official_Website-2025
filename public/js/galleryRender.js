@@ -15,7 +15,9 @@ function renderGallery() {
   // 'img_6.jpg',
   //  path names will be appended automatically
   //  images will appear in this order
-  var strs = ["Bonefire2024Fall.JPG", "毕业酒会2024.JPG","LB2024-2025.JPG"];
+  var strs = ["Bonefire2024Fall.JPG", "毕业酒会2024.JPG","LB2024-2025.JPG", "DSC01734.JPG", "DSC01752.JPG", "Job_0050.jpg", "WechatIMG0aec0fbf301f17adbf7b21ac5fee7bef (1).jpeg", 
+    "B0001140.jpg", "463A8617.JPG", "B0001132.jpg", "Copy of DSC_0712.JPG", 
+  ];
 
   var node = document.getElementById("gallery-content");
   for (var imgPath of strs) {
