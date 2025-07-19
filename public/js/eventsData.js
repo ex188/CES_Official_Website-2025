@@ -14,6 +14,16 @@ function loadRecentEvents() {
           // Only keep the carousel part
           const carousel = block11.querySelector('.nonloop-block-11.owl-carousel');
           if (carousel) {
+            // Clone the carousel and remove text content, keeping only images
+            const clonedCarousel = carousel.cloneNode(true);
+            const cards = clonedCarousel.querySelectorAll('.card.fundraise-item');
+            cards.forEach(card => {
+              // Keep only the image and link, remove card-body
+              const cardBody = card.querySelector('.card-body');
+              if (cardBody) {
+                cardBody.remove();
+              }
+            });
             // Prepare the HTML to inject (with heading)
             const heading = '<div class="row mb-5"><div class="col-md-12"><h2>Recent Events</h2></div></div>';
             // Wrap in the same structure as events.html
@@ -21,8 +31,8 @@ function loadRecentEvents() {
             wrapper.className = 'row';
             const col = document.createElement('div');
             col.className = 'col-md-12 block-11';
-            // Clone the carousel node and its children
-            col.appendChild(carousel.cloneNode(true));
+            // Add the modified carousel
+            col.appendChild(clonedCarousel);
             wrapper.appendChild(col);
             // Insert into the container
             const target = document.getElementById('recent-events-container');
