@@ -116,6 +116,57 @@
     .fade-gallery img.active {
       opacity: 1;
     }
+    .department-intro {
+      margin-bottom: 2rem;
+    }
+    .department-item {
+      cursor: pointer;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .department-icon {
+      font-size: 48px; /* 或者你图标的大小 */
+      margin-bottom: 15px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    .department-label, .department-label-cn {
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      transition: color 0.2s;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .department-text-cn {
+      height: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      line-height: 1.2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .text-line {
+      margin: 1px 0;
+    }
   </style>
 
   <script>
@@ -136,85 +187,84 @@
     });
   </script>
 
+  <div class="department-intro row justify-content-center mb-5" style="margin-top: 3rem;">
+    <div class="col-6 col-md-2 text-center department-item" data-cn="主席团">
+      <div class="department-icon">
+        <img src="images/department_icons/lb.svg" alt="LB" style="width:48px;height:48px;">
+      </div>
+      <div class="department-text-cn" style="display:none;">
+        <div class="text-line">部门规划</div>
+        <div class="text-line">活动展望</div>
+        <div class="text-line">招新纳贤</div>
+      </div>
+      <div class="department-label">LB</div>
+      <div class="department-label-cn" style="display:none;">主席团</div>
+    </div>
+    <div class="col-6 col-md-2 text-center department-item" data-cn="人事部">
+      <div class="department-icon">
+        <img src="images/department_icons/hr.svg" alt="HR" style="width:48px;height:48px;">
+      </div>
+      <div class="department-text-cn" style="display:none;">
+        <div class="text-line">内联活动</div>
+        <div class="text-line">外联机构</div>
+        <div class="text-line">部门互联</div>
+      </div>
+      <div class="department-label">HR</div>
+      <div class="department-label-cn" style="display:none;">人事部</div>
+    </div>
+    <div class="col-6 col-md-2 text-center department-item" data-cn="职业发展部">
+      <div class="department-icon">
+        <img src="images/department_icons/cdp.svg" alt="CDP" style="width:48px;height:48px;">
+      </div>
+      <div class="department-text-cn" style="display:none;">
+        <div class="text-line">职场规划</div>
+        <div class="text-line">简历修改</div>
+        <div class="text-line">职业辅导</div>
+      </div>
+      <div class="department-label">CDP</div>
+      <div class="department-label-cn" style="display:none;">职业发展部</div>
+    </div>
+    <div class="col-6 col-md-2 text-center department-item" data-cn="学术发展部">
+      <div class="department-icon">
+        <img src="images/department_icons/dad.svg" alt="DAD" style="width:48px;height:48px;">
+      </div>
+      <div class="department-text-cn" style="display:none;">
+        <div class="text-line">学术活动</div>
+        <div class="text-line">前沿探索</div>
+        <div class="text-line">学术规划</div>
+      </div>
+      <div class="department-label">DAD</div>
+      <div class="department-label-cn" style="display:none;">学术发展部</div>
+    </div>
+    <div class="col-6 col-md-2 text-center department-item" data-cn="媒体部">
+      <div class="department-icon">
+        <img src="images/department_icons/media.svg" alt="MEDIA" style="width:48px;height:48px;">
+      </div>
+      <div class="department-text-cn" style="display:none;">
+        <div class="text-line">媒体宣传</div>
+        <div class="text-line">创意视频</div>
+        <div class="text-line">推文制作</div>
+      </div>
+      <div class="department-label">MEDIA</div>
+      <div class="department-label-cn" style="display:none;">媒体部</div>
+    </div>
+    <div class="col-6 col-md-2 text-center department-item" data-cn="商业部">
+      <div class="department-icon">
+        <img src="images/department_icons/bd.svg" alt="BD" style="width:48px;height:48px;">
+      </div>
+      <div class="department-text-cn" style="display:none;">
+        <div class="text-line">招商引资</div>
+        <div class="text-line">合作共赢</div>
+        <div class="text-line">收支分明</div>
+      </div>
+      <div class="department-label">BD</div>
+      <div class="department-label-cn" style="display:none;">商业部</div>
+    </div>
+  </div>
+
   <div class="site-section fund-raisers">
     <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-12">
-          <h2>Recent Events</h2>
-        </div>
-      </div>
-
-      <div class="row">
-        
-        <div class="col-md-12 block-11">
-          <div class="nonloop-block-11 owl-carousel">
-        
-    <div class="card fundraise-item">
-      <a href="https://mp.weixin.qq.com/s/ODN-HJWeD8va4g81tR7xDQ" target="_blank"><img class="card-img-top" src="images/wechat_photos/drone_pic.png" alt="Image placeholder"></a>
-      <div class="card-body">
-      <h3 class="card-title"><a href="https://mp.weixin.qq.com/s/ODN-HJWeD8va4g81tR7xDQ" target="_blank">Intern Mixer | 实习讨论会</a></h3>
-      <p class="card-text">
-        During Spring quarter, CES will host its annual Intern Mixer for students to share internship insights and advice. 
-        在Spring quarter， CES将举办一年一度的Intern Mixer实习讨论会，帮助已经获得实习机会的同学抱团讨论，也帮助未来想要找实习的同学汲取经验。
-      </p>
-      </p>
-      </div>
-    </div>
-            
-		<div class="card fundraise-item">
-		  <a href="https://mp.weixin.qq.com/s/JrkgdQb93iz2iNpgDLh76w" target="_blank"><img class="card-img-top" src="images/Grad Panel 2.jpg" alt="Image placeholder"></a>
-		  <div class="card-body">
-			<h3 class="card-title"><a href="https://mp.weixin.qq.com/s/JrkgdQb93iz2iNpgDLh76w" target="_blank">GBM General Body Meeting</a></h3>
-      <p class="card-text">GBM is the change for all student who interested in CES to get to know us! The meeting will be holded at Monday Apr 7 6:00-7:30pm.
-        GBM 是两年一度的让所有对CES感兴趣的同学能够了解CES的机会！活动将在4/7 Monday 18：00-19：30举行！欢迎所有同学来参加！
-      </p>
-		  </div>
-		</div>
-			  
-		<div class="card fundraise-item">
-		  <a href="https://mp.weixin.qq.com/s/RvNL9pLb01jZsDFG_9MWpQ" target="_blank"><img class="card-img-top" src="images/Grad Panel.jpg" alt="Image placeholder"></a>
-		  <div class="card-body">
-			<h3 class="card-title"><a href="https://mp.weixin.qq.com/s/RvNL9pLb01jZsDFG_9MWpQ" target="_blank">Grad Panel: Computer Science</a></h3>
-			<p class="card-text">Learn from recent graduates and professors on how to develop a strong grad school application</p>
-		  </div>
-		</div>
-			  
-		<div class="card fundraise-item">
-		  <a href="https://mp.weixin.qq.com/s/F03OnT4tQCU1bU0-C8KC9g" target="_blank"><img class="card-img-top" src="images/GRE workshop.jpg" alt="Image placeholder"></a>
-		  <div class="card-body">
-			<h3 class="card-title"><a href="https://mp.weixin.qq.com/s/F03OnT4tQCU1bU0-C8KC9g" target="_blank">GRE Workshop</a></h3>
-			<p class="card-text">Wondering what is GRE and how should you prepare for it? &ensp;Here are some advices from a history major student</p>
-		  </div>
-		</div>
-			  
-		<div class="card fundraise-item">
-		  <a href="https://mp.weixin.qq.com/s/F03OnT4tQCU1bU0-C8KC9g" target="_blank"><img class="card-img-top" src="images/CDP.jpg" alt="Image placeholder"></a>
-		  <div class="card-body">
-			<h3 class="card-title"><a href="https://mp.weixin.qq.com/s/F03OnT4tQCU1bU0-C8KC9g" target="_blank">Career Development Symposium</a></h3>
-			<p class="card-text">A career development event targeting DSC and CSE majors</p>
-		  </div>
-		</div>
-		
-	   <div class="card fundraise-item">
-		  <a href="content/Resume Guidelines.pdf" target="_blank"><img class="card-img-top" src="images/Profile Building.jpg" alt="Image placeholder"></a>
-		  <div class="card-body">
-			<h3 class="card-title"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdX8bym3d-OvjB3TxbcAIJUGuVtMbeHRzupbgcqTb7SjibYHA/viewform?usp=sf_link" target="_blank">Professional Profile Building</a></h3>
-			<p class="card-text">A resume critique and interview prep event open to all international students</p>
-		  </div>
-		</div>
-			  
-	    <div class="card fundraise-item">
-		  <a href="#" ><img class="card-img-top" src="images/grad_roundtable.jpg" alt="Image placeholder"></a>
-		  <div class="card-body">
-			<h3 class="card-title"><a href="#" id="Grad School app" >Grad School Application Roundtables</a></h3>
-			<p class="card-text">Some of the most accomplished UCSD alumni share their stories on graduate school application.</p>
-		  </div>
-		</div>
-			  
-           
-          </div>
-        </div>
-      </div>
+      <div id="recent-events-container" style="margin-top: 1rem;"></div>
     </div>
   </div> <!-- .section -->
 
@@ -322,6 +372,7 @@
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
   <!-- <script src="js/google-map.js"></script> -->
   <script src="js/main.js"></script>
+  <script src="js/eventsData.js"></script>
     
   <script>
       function showImg(id) {
@@ -333,6 +384,29 @@
         document.getElementById(id).style.zIndex = "-1";
       }
   </script>
+
+  <script>
+document.querySelectorAll('.department-item').forEach(function(item) {
+  item.addEventListener('mouseenter', function() {
+    // Hide icon and show three-line text using opacity
+    this.querySelector('.department-icon').style.opacity = '0';
+    this.querySelector('.department-text-cn').style.opacity = '1';
+    this.querySelector('.department-text-cn').style.display = 'flex';
+    // Hide English label and show Chinese label
+    this.querySelector('.department-label').style.display = 'none';
+    this.querySelector('.department-label-cn').style.display = 'block';
+  });
+  item.addEventListener('mouseleave', function() {
+    // Show icon and hide three-line text using opacity
+    this.querySelector('.department-icon').style.opacity = '1';
+    this.querySelector('.department-text-cn').style.opacity = '0';
+    this.querySelector('.department-text-cn').style.display = 'none';
+    // Show English label and hide Chinese label
+    this.querySelector('.department-label').style.display = 'block';
+    this.querySelector('.department-label-cn').style.display = 'none';
+  });
+});
+</script>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
