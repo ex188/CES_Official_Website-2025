@@ -31,6 +31,14 @@
     color: var(--theme-heading);
 }
 
+.timeline-event-count {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--theme-text);
+    padding-left: 2px;
+}
+
 #timeline-nav-container .timeline-year-btn {
     display: block;
     width: 100%;

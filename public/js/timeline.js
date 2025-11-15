@@ -264,6 +264,7 @@ $(document).ready(function () {
 
     const $timelineContainer = $("#timeline-container");
     const $navContainer = $("#timeline-nav-container");
+    const $countContainer = $("#timeline-event-count");
 
     if (!$timelineContainer.length) {
         console.error("Timeline container not found.");
@@ -278,6 +279,11 @@ $(document).ready(function () {
             "<p>No past events to display at this time.</p>"
         );
         return;
+    }
+
+    const totalEvents = eventsData.length;
+    if ($countContainer.length) {
+        $countContainer.text(`Total Events: ${totalEvents}`);
     }
 
     const years = [
