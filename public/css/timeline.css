@@ -1,0 +1,214 @@
+:root {
+    --theme-primary: #007bff;
+    --theme-accent: #f96d00;
+    --theme-text: #6c757d;
+    --theme-heading: #343a40;
+    --theme-bg-light: #f8f9fa;
+    --theme-border: #e9ecef;
+    --theme-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    --theme-bg-canvas: #f7f8fa;
+}
+
+.site-section-light-bg {
+    background-color: var(--theme-bg-canvas);
+}
+
+.timeline-nav-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid var(--theme-border);
+    box-shadow: var(--theme-shadow);
+}
+
+.timeline-nav-sidebar h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: var(--theme-heading);
+}
+
+#timeline-nav-container .timeline-year-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: var(--theme-bg-light);
+    border: 1px solid var(--theme-border);
+    color: var(--theme-text);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#timeline-nav-container .timeline-year-btn:hover,
+#timeline-nav-container .timeline-year-btn:focus {
+    background-color: var(--theme-bg-light);
+    border-color: var(--theme-border);
+    color: var(--theme-heading);
+}
+
+#timeline-nav-container .timeline-year-btn.active {
+    background-color: var(--theme-accent) !important;
+    border-color: var(--theme-accent) !important;
+    color: #fff !important;
+    box-shadow: 0 2px 5px rgba(249, 109, 0, 0.3);
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 20px;
+    bottom: 20px;
+    width: 4px;
+    background-color: var(--theme-border);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.timeline-item-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: var(--theme-text);
+}
+.timeline-item-loader p {
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.timeline-item {
+    padding-left: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 19px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid var(--theme-accent);
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    padding: 25px 30px;
+    background-color: white;
+    border: 1px solid var(--theme-border);
+    border-radius: 8px;
+    box-shadow: var(--theme-shadow);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    border-color: var(--theme-accent);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+    transform: translateY(-3px);
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--theme-accent);
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--theme-heading);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-family: "Poppins", sans-serif;
+    color: var(--theme-text);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.timeline-content .btn-primary {
+    background: var(--theme-accent) !important;
+    border: 1px solid var(--theme-accent) !important;
+    color: #fff !important;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.timeline-content .btn-primary:hover,
+.timeline-content .btn-primary:focus,
+.timeline-content .btn-primary:active {
+    background: #f75800 !important;
+    border-color: #f75800 !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .timeline-nav-sidebar {
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    #timeline-nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #timeline-nav-container .timeline-year-btn {
+        width: auto;
+        margin: 4px;
+    }
+
+    .timeline::before {
+        left: 19px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+        padding-right: 0;
+    }
+
+    .timeline-dot {
+        left: 19px;
+    }
+}
