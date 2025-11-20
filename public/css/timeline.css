@@ -1,6 +1,6 @@
 :root {
     --theme-primary: #007bff;
-    --theme-accent: #f96d00;
+    --theme-accent: #912c2e;
     --theme-text: #6c757d;
     --theme-heading: #343a40;
     --theme-bg-light: #f8f9fa;
@@ -183,9 +183,10 @@
 .timeline-content .btn-primary:hover,
 .timeline-content .btn-primary:focus,
 .timeline-content .btn-primary:active {
-    background: #f75800 !important;
-    border-color: #f75800 !important;
+    background: #ffffff !important;
+    border-color: #912c2e !important;
     box-shadow: none !important;
+    color: #912c2e !important;
 }
 
 @media screen and (max-width: 991px) {
