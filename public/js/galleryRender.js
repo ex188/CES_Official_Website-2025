@@ -15,8 +15,9 @@ function renderGallery() {
   // 'img_6.jpg',
   //  path names will be appended automatically
   //  images will appear in this order
-  var strs = ["Bonefire2024Fall.JPG", "毕业酒会2024.JPG","LB2024-2025.JPG", "DSC01734.JPG", "DSC01752.JPG",
-    "B0001140.jpg", "463A8617.JPG", "B0001132.jpg", "Copy of DSC_0712.JPG", 
+  var strs = ["38aac9e45bd9ab5f100ab2f21b133cf8.jpg", "55f23fb465dca08addbcf0c24d28df73.jpg", "304dd2818206523ba2fe85e62eaa1863.JPG", 
+    "837c562af0a010840059000886ce1e52.jpg", "940714a56b7f0e2eeefc02fc8b10ca9c.jpg", "a013c4da65f61e8abf317b994a9d029b.jpg", 
+    "b654fdfc46b0778304bc3aec67b0b687.jpg", "b39502c8615e04de9ef032c008c31988.jpg", "e457a068de651ce6b4b318a11ee38108.jpg"
   ];
 
   var node = document.getElementById("gallery-content");
