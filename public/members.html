@@ -74,6 +74,24 @@
       margin-top: 10px;
       border-radius: 4px 0 0 4px;
     }
+
+    .past-members-toggle, .dept-toggle {
+      transition: color 0.3s ease;
+    }
+
+    .past-members-toggle:hover, .dept-toggle:hover {
+      color: #007bff !important;
+    }
+
+    .past-members-toggle i, .dept-toggle i {
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .past-members-toggle[aria-expanded="true"] i,
+    .dept-toggle[aria-expanded="true"] i {
+      transform: rotate(180deg);
+    }
   </style>
 </head>
 
@@ -136,37 +154,6 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src="images/2024-2025photo/PersonalPhotoSmall/Jane Li.jpg" alt="Image placeholder" class="img-fluid">
-            <div class="donate-info">
-              <h2>Jane Li</h2>
-              <span class="time d-block mb-3">President</span>
-
-              <div class="donate-amount-long d-flex">
-                <div class="label">President</div>
-                <!--                <div class="amount">Dept of Stretegy</div>-->
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src="images/2024-2025photo/PersonalPhotoSmall/Arty Zhang.jpg" alt="Image placeholder"
-              class="img-fluid">
-            <div class="donate-info">
-              <h2>Arty Zhang</h2>
-              <span class="time d-block mb-3">Vice President</span>
-
-              <div class="donate-amount-long d-flex">
-                <div class="label">Vice President</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!--
 		  	<div class="col-md-6 col-lg-4 mb-5">
           <div class="person-donate text-center bg-light pt-4">
@@ -321,21 +308,6 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src="images/2024-2025photo/PersonalPhotoSmall/Wenyao Yu.jpg" alt="Image placeholder"
-              class="img-fluid">
-            <div class="donate-info">
-              <h2 id="easter_eggbb">Wenyao Yu</h2>
-              <span class="time d-block mb-3">Lead of Department of Academic Development (DAD)</span>
-
-              <div class="donate-amount d-flex">
-                <div class="label">Lead</div>
-                <div class="amount">DAD</div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="col-md-6 col-lg-4 mb-5">
           <div class="person-donate text-center bg-light pt-4">
@@ -353,53 +325,6 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src=>
-            <div class="donate-info">
-              <h2 id="easter_eggbb">Yutong She</h2>
-              <span class="time d-block mb-3">Lead of Deapartment of Business Development and External Affairs
-                (BD)</span>
-
-              <div class="donate-amount d-flex">
-                <div class="label">Lead</div>
-                <div class="amount">BD</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src=>
-            <div class="donate-info">
-              <h2 id="easter_eggbb">Ricky Wang</h2>
-              <span class="time d-block mb-3">Lead of Deapartment of Business Development and External Affairs
-                (BD)</span>
-
-              <div class="donate-amount d-flex">
-                <div class="label">Training Lead</div>
-                <div class="amount">BD</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src=>
-            <div class="donate-info">
-              <h2 id="easter_eggbb">Eddy Poon</h2>
-              <span class="time d-block mb-3">Lead of Deapartment of Business Development and External Affairs
-                (BD)</span>
-
-              <div class="donate-amount d-flex">
-                <div class="label">Training Lead</div>
-                <div class="amount">BD</div>
-              </div>
-            </div>
-          </div>
-        </div>
         <!--Just add more people-->
 
       </div>
@@ -685,20 +610,6 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src="images/2024-2025photo/PersonalPhotoSmall/Rui Wang.jpg" alt="Image placeholder" class="img-fluid">
-            <div class="donate-info">
-              <h2>Rui Wang</h2>
-              <span class="time d-block mb-3">Nano Engineering</span>
-
-              <div class="donate-amount d-flex">
-                <div class="label">Member</div>
-                <div class="amount">HR</div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="col-md-6 col-lg-4 mb-5">
           <div class="person-donate text-center bg-light pt-4">
@@ -802,44 +713,10 @@
 
         <div class="col-md-6 col-lg-4 mb-5">
           <div class="person-donate text-center bg-light pt-4">
-            <img src="images/2024-2025photo/PersonalPhotoSmall/Zhirui Zhu.jpg" alt="Image placeholder"
-              class="img-fluid">
-            <div class="donate-info">
-              <h2>Zhirui Zhu</h2>
-              <span class="time d-block mb-3">Bioinformatics</span>
-
-              <div class="donate-amount d-flex">
-                <div class="label">Member</div>
-                <div class="amount">Media</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
             <img src="images/2024-2025photo/PersonalPhotoSmall/Qiwen Xu.jpg" alt="Image placeholder" class="img-fluid">
             <div class="donate-info">
               <h2>Qiwen Xu</h2>
               <span class="time d-block mb-3">Electrical and Computer Engineering</span>
-
-              <div class="donate-amount d-flex">
-                <div class="label">Member</div>
-                <div class="amount">Media</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src="images/2024-2025photo/PersonalPhotoSmall/Peining Wu.jpg" alt="Image placeholder"
-              class="img-fluid">
-            <div class="donate-info">
-              <h2>Peining Wu</h2>
-              <span class="time d-block mb-3">Mathematics-Computer Science</span>
 
               <div class="donate-amount d-flex">
                 <div class="label">Member</div>
@@ -1174,147 +1051,426 @@
     </div>
   </div> <!-- .section -->
 
-  <!-- Alumni -->
+  <!-- Past Members -->
 
   <div class="site-section fund-raisers">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-12 text-center">
-          <h2>Alumni</h2>
+          <h2>
+            <a class="past-members-toggle" data-toggle="collapse" href="#pastMembersSection" role="button" 
+               aria-expanded="false" aria-controls="pastMembersSection" style="cursor: pointer; text-decoration: none; color: inherit;">
+              Past Members <i class="icon-chevron-down" style="font-size: 0.8em;"></i>
+            </a>
+          </h2>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <!--            <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">-->
-            <div class="donate-info">
-              <h2>Zhiyuan Chen</h2>
-              <span class="time d-block mb-3">Former president of CES</span>
+      <div class="collapse" id="pastMembersSection">
+        <div class="row">
 
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
+          <!-- Past HR Members -->
+          <div class="col-md-12 mb-4">
+            <h4>
+              <a class="dept-toggle" data-toggle="collapse" href="#pastHR" role="button" 
+                 aria-expanded="false" aria-controls="pastHR" style="cursor: pointer; text-decoration: none; color: inherit;">
+                HR <i class="icon-chevron-down" style="font-size: 0.7em;"></i>
+              </a>
+            </h4>
+            <div class="collapse" id="pastHR">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Rui Wang</h2>
+                      <span class="time d-block mb-3">Past Member</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">HR</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <!--            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">-->
-            <div class="donate-info">
-              <h2>Shuyang Liu</h2>
-              <span class="time d-block mb-3">Former Lead of DAD</span>
+          <!-- Past Media Members -->
+          <div class="col-md-12 mb-4">
+            <h4>
+              <a class="dept-toggle" data-toggle="collapse" href="#pastMedia" role="button" 
+                 aria-expanded="false" aria-controls="pastMedia" style="cursor: pointer; text-decoration: none; color: inherit;">
+                Media <i class="icon-chevron-down" style="font-size: 0.7em;"></i>
+              </a>
+            </h4>
+            <div class="collapse" id="pastMedia">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Zhirui Zhu</h2>
+                      <span class="time d-block mb-3">Past Member</span>
 
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">Media</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Peining Wu</h2>
+                      <span class="time d-block mb-3">Past Member</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">Media</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <!--            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">-->
-            <div class="donate-info">
-              <h2>Zhizhen Qin</h2>
-              <span class="time d-block mb-3">Former President of CES</span>
+            <div class="col-md-12 mb-4">
+            <h4>
+              <a class="dept-toggle" data-toggle="collapse" href="#pastDAD" role="button" 
+                 aria-expanded="false" aria-controls="pastDAD" style="cursor: pointer; text-decoration: none; color: inherit;">
+                DAD <i class="icon-chevron-down" style="font-size: 0.7em;"></i>
+              </a>
+            </h4>
+            <div class="collapse" id="pastDAD">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Tianyu Fan</h2>
+                      <span class="time d-block mb-3">Past Member</span>
 
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">DAD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Yang Yue</h2>
+                      <span class="time d-block mb-3">Past Member</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">DAD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Quanlin Zhao</h2>
+                      <span class="time d-block mb-3">Past Member</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">DAD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Ruhua Pan</h2>
+                      <span class="time d-block mb-3">Past Member</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">DAD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <!--            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">-->
-            <div class="donate-info">
-              <h2>Ziyan Cui</h2>
-              <span class="time d-block mb-3">Former Vice President of External</span>
+            <div class="col-md-12 mb-4">
+            <h4>
+              <a class="dept-toggle" data-toggle="collapse" href="#pastBD" role="button" 
+                 aria-expanded="false" aria-controls="pastBD" style="cursor: pointer; text-decoration: none; color: inherit;">
+                BD <i class="icon-chevron-down" style="font-size: 0.7em;"></i>
+              </a>
+            </h4>
+            <div class="collapse" id="pastBD">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Emily</h2>
+                      <span class="time d-block mb-3">Past Member</span>
 
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">BD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Qiyan Guan</h2>
+                      <span class="time d-block mb-3">Past Member</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">BD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Zichen Yu</h2>
+                      <span class="time d-block mb-3">Past Member</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Officer</div>
+                        <div class="amount">BD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <!--            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">-->
-            <div class="donate-info">
-              <h2>Xuezheng Wang</h2>
-              <span class="time d-block mb-3">Former Vice President of Media</span>
+          <div class="col-md-12 mb-4">
+            <h4>
+              <a class="dept-toggle" data-toggle="collapse" href="#pastLB" role="button" 
+                 aria-expanded="false" aria-controls="pastLB" style="cursor: pointer; text-decoration: none; color: inherit;">
+                Leadership Board (LB) <i class="icon-chevron-down" style="font-size: 0.7em;"></i>
+              </a>
+            </h4>
+            <div class="collapse" id="pastLB">
+              <div class="row">
+                <!-- Presidents -->
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Jane Li</h2>
+                      <span class="time d-block mb-3">Past Member</span>
 
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
+                      <div class="donate-amount d-flex">
+                        <div class="label">President</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Zhiyuan Chen</h2>
+                      <span class="time d-block mb-3">Former President of CES</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">President</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Zhizhen Qin</h2>
+                      <span class="time d-block mb-3">Former President of CES</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">President</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Vice Presidents -->
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Arty</h2>
+                      <span class="time d-block mb-3">Past Member</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Vice President</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Xuezheng Wang</h2>
+                      <span class="time d-block mb-3">Former Vice President of Media</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Vice President</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Ziyan Cui</h2>
+                      <span class="time d-block mb-3">Former Vice President of External</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Vice President</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Leads -->
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Wenyao Yu</h2>
+                      <span class="time d-block mb-3">Former Lead of DAD</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Lead</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Shuyang Liu</h2>
+                      <span class="time d-block mb-3">Former Lead of DAD</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Lead</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Yutong She</h2>
+                      <span class="time d-block mb-3">Former Lead of BD</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Lead</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Ricky Wang</h2>
+                      <span class="time d-block mb-3">Former Lead of BD</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Lead</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Eddy Poon</h2>
+                      <span class="time d-block mb-3">Former Lead of BD</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Lead</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Cheng Gong</h2>
+                      <span class="time d-block mb-3">Former Lead of CDP</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Lead</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Shantao Yi</h2>
+                      <span class="time d-block mb-3">Former Lead of CDP</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Lead</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+                  <div class="person-donate text-center bg-light pt-4">
+                    <div class="donate-info">
+                      <h2>Zhixiong Li</h2>
+                      <span class="time d-block mb-3">Former Lead of IA</span>
+
+                      <div class="donate-amount d-flex">
+                        <div class="label">Lead</div>
+                        <div class="amount">LB</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
-
-        <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <!--            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">-->
-            <div class="donate-info">
-              <h2>Cheng Gong</h2>
-              <span class="time d-block mb-3">Former Lead of CDP</span>
-
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <!--            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">-->
-            <div class="donate-info">
-              <h2>Shantao Yi</h2>
-              <span class="time d-block mb-3">Former Lead of CDP</span>
-
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <!--            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">-->
-            <div class="donate-info">
-              <h2>Zhixiong Li</h2>
-              <span class="time d-block mb-3">Former Lead of IA</span>
-
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!--
-		  <div class="col-md-6 col-lg-3 mb-5">
-          <div class="person-donate text-center bg-light pt-4">
-            <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
-            <div class="donate-info">
-              <h2>Guangze Wang</h2>
-              <span class="time d-block mb-3">Former Lead of IA</span>
-
-              <div class="donate-amount-long d-flex">
-                <div class="label"></div>
-              </div>
-            </div>
-          </div>    
-        </div>
--->
-
-
       </div>
     </div>
   </div> <!-- .section -->
@@ -1536,6 +1692,15 @@
       document.getElementById(id).style.opacity = 0;
       document.getElementById(id).style.zIndex = "-1";
     }
+
+    // Handle collapse events for chevron rotation
+    $(document).ready(function() {
+      $('#pastMembersSection, #pastHR, #pastMedia, #pastDAD, #pastBD, #pastLB').on('show.bs.collapse', function () {
+        $(this).prev().find('a').attr('aria-expanded', 'true');
+      }).on('hide.bs.collapse', function () {
+        $(this).prev().find('a').attr('aria-expanded', 'false');
+      });
+    });
   </script>
 
 </body>
