@@ -1,0 +1,44 @@
+[debug] [2025-12-31T05:24:06.620Z] ----------------------------------------------------------------------
+[debug] [2025-12-31T05:24:06.621Z] Command:       /usr/local/bin/node /Users/jennyfu/.npm/_npx/7750544ccf494d8b/node_modules/.bin/firebase serve
+[debug] [2025-12-31T05:24:06.621Z] CLI Version:   15.1.0
+[debug] [2025-12-31T05:24:06.621Z] Platform:      darwin
+[debug] [2025-12-31T05:24:06.621Z] Node Version:  v25.2.1
+[debug] [2025-12-31T05:24:06.621Z] Time:          Tue Dec 30 2025 21:24:06 GMT-0800 (Pacific Standard Time)
+[debug] [2025-12-31T05:24:06.621Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-31T05:24:07.170Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-31T05:24:07.170Z] > authorizing via signed-in user (fuj0906@gmail.com)
+[debug] [2025-12-31T05:24:07.170Z] [iam] checking project chinese-engineering-society for permissions ["firebase.projects.get"]
+[debug] [2025-12-31T05:24:07.170Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:07.170Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:07.171Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chinese-engineering-society:testIamPermissions [none]
+[debug] [2025-12-31T05:24:07.171Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chinese-engineering-society:testIamPermissions x-goog-quota-user=projects/chinese-engineering-society
+[debug] [2025-12-31T05:24:07.171Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chinese-engineering-society:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-12-31T05:24:07.313Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chinese-engineering-society:testIamPermissions 200
+[debug] [2025-12-31T05:24:07.313Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chinese-engineering-society:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-12-31T05:24:07.313Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:07.313Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:07.313Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/chinese-engineering-society [none]
+[debug] [2025-12-31T05:24:07.473Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/chinese-engineering-society 200
+[debug] [2025-12-31T05:24:07.473Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/chinese-engineering-society {"projectNumber":"432146520827","projectId":"chinese-engineering-society","lifecycleState":"ACTIVE","name":"Chinese Engineering Society","labels":{"firebase":"enabled"},"createTime":"2019-09-03T01:35:27.825Z","parent":{"type":"organization","id":"693889153112"}}
+[info] 
+[info] === Serving from '/Users/jennyfu/Documents/GitHub/CES_Official_Website-2025'...
+[info] 
+[debug] [2025-12-31T05:24:07.476Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:07.476Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:07.476Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/chinese-engineering-society/sites 
+[debug] [2025-12-31T05:24:07.925Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/chinese-engineering-society/sites 200
+[debug] [2025-12-31T05:24:07.925Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/chinese-engineering-society/sites {"sites":[{"name":"projects/chinese-engineering-society/sites/chinese-engineering-society","defaultUrl":"https://chinese-engineering-society.web.app","appId":"1:432146520827:web:522bcd985eadfe44","type":"DEFAULT_SITE"},{"name":"projects/chinese-engineering-society/sites/ucsdces2","defaultUrl":"https://ucsdces2.web.app","appId":"1:432146520827:web:b145c9d2ff1f13a7d16e5e","type":"USER_SITE"}]}
+[debug] [2025-12-31T05:24:07.926Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:07.926Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:07.926Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chinese-engineering-society/webApps/1:432146520827:web:522bcd985eadfe44/config [none]
+[debug] [2025-12-31T05:24:08.387Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chinese-engineering-society/webApps/1:432146520827:web:522bcd985eadfe44/config 200
+[debug] [2025-12-31T05:24:08.387Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chinese-engineering-society/webApps/1:432146520827:web:522bcd985eadfe44/config {"projectId":"chinese-engineering-society","appId":"1:432146520827:web:522bcd985eadfe44","databaseURL":"https://chinese-engineering-society.firebaseio.com","storageBucket":"chinese-engineering-society.firebasestorage.app","apiKey":"AIzaSyCVrfJ4RNa0Zs73agmk1eBWJ8U5ox1fg5A","authDomain":"chinese-engineering-society.firebaseapp.com","messagingSenderId":"432146520827","projectNumber":"432146520827","version":"2"}
+[debug] [2025-12-31T05:24:08.395Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:08.395Z] Checked if tokens are valid: true, expires at: 1767161320513
+[debug] [2025-12-31T05:24:08.395Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chinese-engineering-society [none]
+[debug] [2025-12-31T05:24:08.552Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chinese-engineering-society 200
+[debug] [2025-12-31T05:24:08.553Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chinese-engineering-society {"projectId":"chinese-engineering-society","projectNumber":"432146520827","displayName":"Chinese Engineering Society","name":"projects/chinese-engineering-society","resources":{"hostingSite":"chinese-engineering-society","realtimeDatabaseInstance":"chinese-engineering-society"},"state":"ACTIVE","etag":"1_a35e6683-05ce-4212-af22-eef1060d6d46"}
+[info] i  hosting[chinese-engineering-society]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[chinese-engineering-society]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [31/Dec/2025:05:24:10 +0000] "GET /about.html HTTP/1.1" 200 - "http://localhost:5002/index.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [31/Dec/2025:05:24:10 +0000] \"GET /about.html HTTP/1.1\" 200 - \"http://localhost:5002/index.html\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
